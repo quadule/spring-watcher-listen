@@ -14,10 +14,10 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 2.0"
-  spec.add_development_dependency "rake"
-  spec.add_development_dependency "activesupport"
-
+  spec.add_dependency "logger"
   spec.add_dependency "spring", ">= 4"
   spec.add_dependency "listen", ">= 2.7", '< 4.0'
+  spec.add_development_dependency "bundler", "~> 2.0"
+  spec.add_development_dependency "timeout"
+  spec.add_development_dependency "activesupport"
 end
